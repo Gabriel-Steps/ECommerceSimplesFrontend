@@ -1,1 +1,46 @@
-<p>register works!</p>
+<div class="div-container-page-login">
+    <div class="div-container-forms">
+        <h1>Criar Conta</h1>
+        <div class="div-container-buttons">
+            <app-button-icon-component imageUrl="assets/google.png"></app-button-icon-component>
+            <app-button-icon-component imageUrl="assets/facebook.png"></app-button-icon-component>
+            <app-button-icon-component imageUrl="assets/github.png"></app-button-icon-component>
+            <app-button-icon-component imageUrl="assets/linkedin.png"></app-button-icon-component>
+        </div>
+        <p>Crie uma conta informando seu nome, e-mail e senha.</p>
+        <div class="div-container-inputs">
+            <app-input-component
+                type="text"
+                placeholder="Nome"
+                imageUrl="assets/icons-inputs/user.png"
+                [(value)]="name"
+            ></app-input-component>
+            <app-input-component
+                type="email"
+                placeholder="E-mail"
+                imageUrl="assets/icons-inputs/envelope.png"
+                [(value)]="email"
+            ></app-input-component>
+            <app-input-component
+                type="password"
+                placeholder="Senha"
+                imageUrl="assets/icons-inputs/lock-padlock.png"
+                [(value)]="password"
+            ></app-input-component>
+            <app-input-component
+                type="password"
+                placeholder="Confirme a senha"
+                imageUrl="assets/icons-inputs/lock-padlock.png"
+                [(value)]="confirmPassword"
+            ></app-input-component>
+        </div>
+        <button (click)="register()">
+            Cadastrar
+        </button>
+    </div>
+    <div class="div-container-access-style">
+        <h1>Já possui conta? Entre!</h1>
+        <p>Acesse sua conta para ter acesso a todos os recursos do nosso site.</p>
+        <button (click)="redirecionarParaLogin()">Sign In</button>
+    </div>
+</div>

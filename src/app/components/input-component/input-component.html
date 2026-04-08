@@ -4,6 +4,6 @@
         [type]="type"
         [placeholder]="placeholder"
         [(ngModel)]="value"
-        (ngModelChange)="valueChange.emit(value)"
+        (ngModelChange)="valueChange.emit($event)"
     />
 </div>
