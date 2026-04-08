@@ -1,0 +1,9 @@
+<div class="div-container-input-component">
+    <img [src]="imageUrl" alt="Input Image" class="input-image" width="20"/>
+    <input
+        [type]="type"
+        [placeholder]="placeholder"
+        [(ngModel)]="value"
+        (ngModelChange)="valueChange.emit(value)"
+    />
+</div>

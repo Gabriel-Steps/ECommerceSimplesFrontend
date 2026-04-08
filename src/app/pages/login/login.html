@@ -1,0 +1,35 @@
+<div class="div-container-page-login">
+    <div class="div-container-forms">
+        <h1>Sign In</h1>
+        <div class="div-container-buttons">
+            <app-button-icon-component imageUrl="assets/google.png"></app-button-icon-component>
+            <app-button-icon-component imageUrl="assets/facebook.png"></app-button-icon-component>
+            <app-button-icon-component imageUrl="assets/github.png"></app-button-icon-component>
+            <app-button-icon-component imageUrl="assets/linkedin.png"></app-button-icon-component>
+        </div>
+        <p>Faça login utilizando seu e-mail e sua senha.</p>
+        <div class="div-container-inputs">
+            <app-input-component
+                type="email"
+                placeholder="E-mail"
+                imageUrl="assets/icons-inputs/user.png"
+                [(value)]="email"
+            ></app-input-component>
+            <app-input-component
+                type="password"
+                placeholder="Senha"
+                imageUrl="assets/icons-inputs/lock-padlock.png"
+                [(value)]="password"
+            ></app-input-component>
+        </div>
+        <p><a href="">Esqueceu a sua senha?</a></p>
+        <button (click)="login()">
+            Entrar
+        </button>
+    </div>
+    <div class="div-container-access-style">
+        <h1>Não possui conta? Cadastre-se!</h1>
+        <p>Crie uma conta para ter acesso a todos os recursos do nosso site.</p>
+        <button>Cadastrar-se</button>
+    </div>
+</div>
